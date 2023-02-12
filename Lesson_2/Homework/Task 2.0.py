@@ -9,14 +9,14 @@ heads = tails = 0
 for i in range(n):
     coin = int(input('Укажите положение монетки, где 0 это heads, а 1 это tails: '))
     if coin > 1:
-        print('Введено неопустимое значение')
+        print('Введено недопустимое значение')
         break
     else:
         if coin == 0:
            heads += 1
         else:
             tails += 1
-    if heads >= tails:
+if heads >= tails:
         print(tails)
-    else:
+else:
         print(heads)

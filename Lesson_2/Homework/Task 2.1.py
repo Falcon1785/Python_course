@@ -7,7 +7,7 @@
 s = int(input('Введите сумму чисел: '))
 p = int(input('Введите произведение чисел: '))
 i = 1
-while True:
+while i < p:
     if p % i == 0 and p / i == s - i:
         print(f'x = {i}, y = {int(p / i)}')
         break
