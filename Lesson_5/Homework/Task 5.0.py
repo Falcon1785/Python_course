@@ -10,3 +10,14 @@ def deg(a, b):
     return (a * deg(a, b - 1))
 
 print(deg(3, 5))
+
+#====================
+
+def deg(a, b):
+    if b == 0:
+        return 1
+    if b < 0:
+        return 1 / (deg(a, b + 1) * a)
+    return deg(a, b - 1) * a
+
+print(deg(2, 3))
